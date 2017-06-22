@@ -1,0 +1,289 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+ font-family: 'Emilys Candy', cursive;   
+    margin: 0 auto;
+}
+
+.container {
+    min-width: 480px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+}
+
+
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/krakow-cracow-992967_1280.jpg);
+    background-size: cover;
+    background-position: 0 -30px;
+    background-repeat: no-repeat;
+/*    background-position: center;*/
+    text-align: center;
+    background-color: #f0f0e8;
+
+}
+
+h1 {
+    color: white;
+    font-size: 6em;
+    padding-top: 310px;
+   
+}
+#motto {
+   color: white;
+   padding-top: 25px;
+   font-size: 2.5em;
+    margin-bottom: 260px;
+}
+
+
+.icon-heart {
+    color: red;
+    font-size: 1.5em;
+}
+
+#circle-box {
+    display: flex;
+}
+
+.circle {
+    top: 10px;
+    justify-content: center;
+    width: 150px;
+	height: 150px;
+    background-color: black;
+    border: 10px double white;
+    opacity: 0.4;
+	border-radius: 100%;
+	margin: 40px auto 0;
+      font-size: 1.5em;
+    color: white;
+    text-align: center;
+}
+
+.circle > p {
+    margin-top: 55px;
+}
+.middle-circ > p {
+    margin-top: 35px;
+}
+
+
+.left-circ:hover {
+    background-image: url(../images/restaurant-449952_640.png);
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.middle-circ:hover {
+     background-image: url(../images/ring-260892_640.png);
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+}
+.right-circ:hover {
+     background-image: url(../images/phone-499991_640.png);
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+#left_side {
+    float: left;
+    margin-top: 180px;
+    height: 580px;
+    width: 50%;
+}
+
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: saddlebrown;
+    font-size: 2.5em;
+}
+#about-text {
+    text-align: justify;
+    margin-bottom: 30px;
+    line-height: normal;
+    font-family: 'Arial';
+    color: black;
+}
+.about {
+    height: 100%;
+    width: 90%;
+    border-top: 1px solid brown;
+    border-bottom: 1px solid brown;
+    position: relative;
+}
+.chief {
+    width: 200px;
+	height: 200px;
+	background-image: url(../images/cooking-890885_640.png);
+    background-position: -108px -124px;
+	border-radius: 100%;
+	margin: 40px auto 0;
+}
+h3 {
+    margin-top: 15px;
+  text-align: center;  
+    font-size: 1.8em;
+    margin-bottom: -27px;
+}
+
+#leftclam {
+    position: absolute;
+    top: 270px;
+    left: 20px;
+    font-size: 16em;
+    color: saddlebrown;
+}
+#rightclam {
+    position: absolute;
+    top: 270px;
+    right: 20px;
+    font-size: 16em;
+    color: saddlebrown;
+}
+
+#products {
+    height: 100vh;
+    width: 100%;
+    background-color: #f0f0e8;
+}
+
+
+#right_side {
+    margin-top: 180px;
+    float: right;
+    height: 600px;
+    width: 50%;
+}
+
+a {
+ text-decoration: none;
+}
+
+
+.b {
+    padding-left: 5px;
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    border: 15px double #f0f0e8;
+}
+
+.b:hover  {
+    filter: grayscale(100%);
+}
+
+.clear {
+    clear: both;
+    
+}
+.left_bottom {
+    margin-bottom: 20px;
+    float: left;
+    background-image: url(../images/coffee-2354860_640.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+.left_top {
+    margin-bottom: 20px;
+    float: right;
+    background-image: url(../images/salmon-518032_640.png);
+    background-size: cover;
+    background-position: left;
+    
+}
+.right_bottom {
+    float: left;
+    background-image: url(../images/pizza-2341377_640.png);
+    background-size: cover;
+    background-position: center;
+}
+.right_top {
+    float: right;
+    background-image: url(../images/cake-1996314_640.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+#menu {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/pizza-1209748_1280.png);
+    background-size: cover;
+    
+}
+#local {
+    height: 100vh;
+    width: 100%;
+    background-color: #f0f0e8;
+}
+#contact {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/dessert-352475_1280.png);
+    background-size: cover;
+}
+
