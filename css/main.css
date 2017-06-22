@@ -3,53 +3,141 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-
 body {
- font-family: 'Emilys Candy', cursive;   
+    font-family: 'Emilys Candy', cursive;
     margin: 0 auto;
 }
 
@@ -60,8 +148,6 @@ body {
     padding: 0 10px 0 10px;
 }
 
-
-
 header {
     height: 100vh;
     width: 100%;
@@ -71,22 +157,29 @@ header {
     background-repeat: no-repeat;
     text-align: center;
     background-color: #f0f0e8;
+}
 
+.abc {
+    position: absolute;
+    top: 20px;
+    height: 150px;
+    width: 150px;
+    background-image: url(../images/a.png);
+    background-size: cover;
 }
 
 h1 {
     color: white;
     font-size: 6em;
     padding-top: 310px;
-   
-}
-#motto {
-   color: white;
-   padding-top: 25px;
-   font-size: 2.5em;
-    margin-bottom: 260px;
 }
 
+#motto {
+    color: white;
+    padding-top: 25px;
+    font-size: 2.5em;
+    margin-bottom: 260px;
+}
 
 .icon-heart {
     color: red;
@@ -101,24 +194,24 @@ h1 {
     top: 10px;
     justify-content: center;
     width: 150px;
-	height: 150px;
+    height: 150px;
     background-color: black;
     border: 10px double white;
     opacity: 0.4;
-	border-radius: 100%;
-	margin: 40px auto 0;
-      font-size: 1.5em;
+    border-radius: 100%;
+    margin: 40px auto 0;
+    font-size: 1.5em;
     color: white;
     text-align: center;
 }
 
-.circle > p {
+.circle>p {
     margin-top: 55px;
 }
-.middle-circ > p {
+
+.middle-circ>p {
     margin-top: 35px;
 }
-
 
 .left-circ:hover {
     background-image: url(../images/restaurant-449952_640.png);
@@ -128,13 +221,14 @@ h1 {
 }
 
 .middle-circ:hover {
-     background-image: url(../images/ring-260892_640.png);
+    background-image: url(../images/ring-260892_640.png);
     opacity: 1;
     background-size: cover;
     background-position: center;
 }
+
 .right-circ:hover {
-     background-image: url(../images/phone-499991_640.png);
+    background-image: url(../images/phone-499991_640.png);
     opacity: 1;
     background-size: cover;
     background-position: center;
@@ -147,7 +241,6 @@ h1 {
     width: 50%;
 }
 
-
 h2 {
     margin-top: 20px;
     margin-bottom: 30px;
@@ -155,6 +248,7 @@ h2 {
     color: saddlebrown;
     font-size: 2.5em;
 }
+
 #about-text {
     text-align: justify;
     margin-bottom: 30px;
@@ -162,6 +256,7 @@ h2 {
     font-family: 'Arial';
     color: black;
 }
+
 .about {
     height: 100%;
     width: 90%;
@@ -169,17 +264,19 @@ h2 {
     border-bottom: 1px solid brown;
     position: relative;
 }
+
 .chief {
     width: 200px;
-	height: 200px;
-	background-image: url(../images/cooking-890885_640.png);
+    height: 200px;
+    background-image: url(../images/cooking-890885_640.png);
     background-position: -108px -124px;
-	border-radius: 100%;
-	margin: 40px auto 0;
+    border-radius: 100%;
+    margin: 40px auto 0;
 }
+
 h3 {
     margin-top: 15px;
-  text-align: center;  
+    text-align: center;
     font-size: 1.8em;
     margin-bottom: -27px;
 }
@@ -191,6 +288,7 @@ h3 {
     font-size: 16em;
     color: saddlebrown;
 }
+
 #rightclam {
     position: absolute;
     top: 270px;
@@ -205,7 +303,6 @@ h3 {
     background-color: #f0f0e8;
 }
 
-
 #right_side {
     margin-top: 180px;
     float: right;
@@ -214,9 +311,8 @@ h3 {
 }
 
 a {
- text-decoration: none;
+    text-decoration: none;
 }
-
 
 .b {
     padding-left: 5px;
@@ -226,36 +322,37 @@ a {
     border: 15px double #f0f0e8;
 }
 
-.b:hover  {
+.b:hover {
     filter: grayscale(100%);
 }
 
 .clear {
     clear: both;
-    
 }
+
 .left_bottom {
     margin-bottom: 20px;
     float: left;
     background-image: url(../images/coffee-2354860_640.png);
     background-size: cover;
     background-position: center;
-    
 }
+
 .left_top {
     margin-bottom: 20px;
     float: right;
     background-image: url(../images/salmon-518032_640.png);
     background-size: cover;
     background-position: left;
-    
 }
+
 .right_bottom {
     float: left;
     background-image: url(../images/pizza-2341377_640.png);
     background-size: cover;
     background-position: center;
 }
+
 .right_top {
     float: right;
     background-image: url(../images/cake-1996314_640.png);
@@ -263,26 +360,84 @@ a {
     background-position: center;
 }
 
-
-
-
-
 #menu {
     height: 100vh;
     width: 100%;
+    position: relative;
     background-image: url(../images/pizza-1209748_1280.png);
     background-size: cover;
+    background-attachment: fixed;
+}
+
+#breakfast-menu {
+    margin-top: 100px;
+    float: left;
+    width: 40%;
+    height: 750px;
+    background-color: #f0f0e8;
     
 }
+
+#lunch-menu {
+    margin-top: 100px;
+    float: right;
+    width: 40%;
+    height: 750px;
+    background-color: #f0f0e8;
+}
+
+
+#ofert{
+    top: 530px;
+    left: 35%;
+    right: 35%;
+    position: absolute;
+    height: 400px;
+    width: 30%;
+    background-image: url(../images/two-types-of-wine-1761613_640.jpg);
+    filter: sepia(100%) drop-shadow(4px 4px 2px black);
+    border: 2px solid grey;
+
+}
+
+
+
+h4 {
+    margin-top: 20px;
+    font-size: 2em;
+    text-align: center;
+    color: saddlebrown;
+}
+
+.menu-text {
+    font-family: 'Arial';
+    margin-bottom: 30px;
+    padding: 15px;
+    text-align: justify;
+}
+
+#menu-download-right {
+    font-family: 'Arial';
+    font-size: 1.5em;
+    margin-left: 25%;
+}
+
+#menu-download-left {
+    font-family: 'Arial';
+     font-size: 1.5em;
+    margin-left: 25%;
+}
+
+
 #local {
     height: 100vh;
     width: 100%;
     background-color: #f0f0e8;
 }
+
 #contact {
     height: 100vh;
     width: 100%;
     background-image: url(../images/dessert-352475_1280.png);
     background-size: cover;
 }
-
