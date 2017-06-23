@@ -468,10 +468,13 @@ h5 {
     background-image: url(../images/villa-cortine-palace-949550_640.jpg);
     background-size: cover;
     opacity: 0.5;
+    transition: 1s;
 
 }
 #local-image-left:hover {
     opacity: 1;
+    transition: 1s;
+    
 }
 
 
@@ -481,10 +484,12 @@ h5 {
     background-image: url(../images/affair-1238434_640.jpg);
     background-size: cover;
     opacity: 0.5;
+    transition: 1s;
 }
 
 #local-image-right:hover {
     opacity: 1;
+    transition: 1s;
 }
 
 
@@ -499,4 +504,34 @@ h5 {
     width: 100%;
     background-image: url(../images/dessert-352475_1280.png);
     background-size: cover;
+    background-attachment: fixed;
 }
+
+
+
+#contact-left {
+    margin-top: 150px;
+    float: left;
+    width: 40%;
+    height: 650px;
+}
+#contact-right {
+    margin-top: 150px;
+    float: right;
+    width: 40%;
+    height: 650px;
+}
+
+
+#mapa {
+        background-position: -80px -680px;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 350px;
+    background-image: url(../images/maps.png);
+    background-size: cover;
+    opacity: 0.9;
+    
+}
+
+
