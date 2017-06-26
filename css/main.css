@@ -138,7 +138,7 @@ table {
 
 body {
     font-family: 'Emilys Candy', cursive;
-    margin: 0 auto;
+    min-width: 600px;
 }
 
 .container {
