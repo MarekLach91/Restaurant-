@@ -1,0 +1,465 @@
+body {
+    font-family: 'Emilys Candy', cursive;
+    min-width: 375px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 1200px;
+    margin: 0 auto;
+    //    border: 1px solid red;
+    padding: 0 10px 0 10px;
+}
+
+$columns: 12;
+@media (min-width: 800px) {
+    @for $i from 1 through $columns {
+        .col-#{$i} {
+            width: 100%/$columns* $i;
+            float: left;
+        }
+    }
+}
+
+
+header {
+  height: 100vh; 
+  background-image: url(../images/krakow-cracow-992967_1280.png);
+    background-size: cover;
+//    background-position: 0 -30px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 6em;
+    padding-top: 270px;
+}
+
+@media (max-width: 799px) {
+  h1 {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 3em;
+  }
+    .circle  {
+        font-size: 1em;
+            width: 120px;
+            height: 120px
+    }
+    .circle > p {
+        margin-top: 35px; 
+    }
+   
+}
+
+#motto {
+    color: white;
+    padding-top: 25px;
+    font-size: 2.5em;
+    padding-bottom: 25px;
+}
+
+.icon-heart {
+    color: red;
+    font-size: 1.5em;
+}
+
+#circle-box {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+@media (max-width: 799px) {
+#circle-box {
+    margin-bottom: 20px;
+  }
+}
+
+
+.circle {
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border: 10px double white;
+    opacity: 0.4;
+    border-radius: 100%;
+    margin: 40px auto 0;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.circle>p {
+    margin-top: 55px;
+}
+
+.middle-circ>p {
+    margin-top: 35px;
+}
+
+.left-circ:hover {
+    background-image: url(../images/restaurant-449952_640.png);
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.middle-circ:hover {
+    background-image: url(../images/ring-260892_640.png);
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.right-circ:hover {
+    background-image: url(../images/phone-499991_640.png);
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+//section 1
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: saddlebrown;
+    font-size: 2.5em;
+}
+
+#about-text {
+    text-align: justify;
+    margin-bottom: 30px;
+    line-height: normal;
+    font-family: 'Arial';
+    color: black;
+}
+
+.about {
+    margin-top: 120px;
+    height: 600px;
+    width: 90%;
+    border-top: 1px solid brown;
+    border-bottom: 1px solid brown;
+    
+}
+    
+ @media (max-width: 799px) {
+.about {
+    margin-top: 0;
+  }
+} 
+    
+.chief-box {
+    position: relative;
+}
+
+.chief {
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/cooking-890885_640.png);
+    background-position: -108px -124px;
+    border-radius: 100%;
+    margin: 40px auto 0;
+}
+
+h3 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: -27px;
+}
+
+#leftclam {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16em;
+    color: saddlebrown;
+}
+
+#rightclam {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16em;
+    color: saddlebrown;
+}
+
+.about-img {
+    margin-top: 120px;
+}
+
+
+.left_bottom {
+    height: 200px;
+    margin-bottom: 20px;
+    background-image: url(../images/coffee-2354860_640.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.left_top {
+    height: 200px;
+    margin-bottom: 20px;
+    background-image: url(../images/salmon-518032_640.png);
+    background-size: cover;
+    background-position: left;
+}
+
+.right_bottom {
+    height: 200px;
+    background-image: url(../images/pizza-2341377_640.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.right_top {
+    height: 200px;
+    background-image: url(../images/cake-1996314_640.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.border-img {
+    padding-left: 5px;
+    height: 290px;
+    background-color: white;
+    border: 15px double #f0f0e8;
+}
+
+.border-img:hover {
+    filter: grayscale(100%);
+}
+
+
+
+
+
+//section 2
+
+
+.us {
+   min-height: 100vh;
+    background-color: #f0f0e8;
+}
+
+#breakfast-menu {
+    margin-top: 100px;
+    width: 90%;
+    height: 650px;
+    background-color: #f0f0e8;
+    
+}
+    
+    
+ @media (max-width: 799px) {
+#breakfast-menu {
+    margin-top: 0;
+  }
+}       
+
+#lunch-menu {
+    margin-top: 100px;
+    width: 90%;
+    height: 650px;
+    background-color: #f0f0e8;
+}
+#ofert{
+    top: 530px;
+    left: 35%;
+    right: 35%;
+    position: absolute;
+    height: 400px;
+    min-width: 30%;
+    background-image: url(../images/two-types-of-wine-1761613_640.png);
+    filter: sepia(100%) drop-shadow(4px 4px 2px black);
+    border: 2px solid grey;
+
+}
+
+@media (max-width: 1600px) {
+    #ofert {
+       top: 560px; 
+        left: 25%;
+        right: 25%;
+        width: 50%;
+        background-size: cover;
+    }
+}
+
+
+
+
+
+@media (max-width: 799px) {
+    #ofert {
+       top: 510px; 
+        left: 15%;
+        right: 15%;
+        height: 250px;
+        width: 70%;
+        background-size: cover;
+    }
+}
+
+
+
+h4 {
+    padding-top: 20px;
+    font-size: 2em;
+    text-align: center;
+    color: saddlebrown;
+}
+
+
+#menu-download-right {
+    font-family: 'Arial';
+    font-size: 1.5em;
+    display:block;
+    text-align:center
+}
+
+#menu-download-left {
+    font-family: 'Arial';
+     font-size: 1.5em;
+    display:block;
+    text-align:center
+}
+
+
+
+//sec 3
+
+.menu {
+    min-height: 100vh;
+    background-image: url(../images/pizza-1209748_1280.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.wedding {
+   min-height: 100vh;  
+    background-color: #f0f0e8;
+}
+
+#local-left {
+    margin-top: 150px;
+    width: 90%;
+    height: 650px;
+}
+ 
+     @media (max-width: 799px) {
+#local-left {
+    margin-top: 0;
+  }
+}       
+      
+#local-right {
+    margin-top: 150px;
+    width: 90%;
+    min-height: 650px;
+}
+
+h5 {
+    font-size: 2em;
+    text-align: center;
+    color: saddlebrown;
+    margin: 20px 0 10px 0;
+}
+
+#local-image-left {
+    width: 100%;
+    height: 310px;
+    background-image: url(../images/villa-cortine-palace-949550_640.png);
+    background-size: cover;
+    opacity: 0.5;
+    transition: 1s;
+
+}
+#local-image-left:hover {
+    opacity: 1;
+    transition: 1s;
+    
+}
+
+
+#local-image-right {
+    width: 100%;
+    height: 310px;
+    background-image: url(../images/affair-1238434_640.png);
+    background-size: cover;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+#local-image-right:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+.borderline {
+    line-height: 20px;
+    border-left: 1px solid saddlebrown;
+    border-right: 1px solid saddlebrown;
+}
+
+
+.menu-text {
+    font-family: 'Arial';
+//    margin-bottom: 30px;
+    padding: 15px;
+    text-align: justify;
+}
+
+
+.contact {
+    height: 100vh; 
+    background-image: url(../images/dessert-352475_1280.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+footer {
+          background-position: -80px -680px;
+    background-attachment: fixed;
+    height: 350px;
+    background-image: url(../images/maps.png);
+    background-size: cover;
+    opacity: 0.9; 
+}
+
+
+
+@media (max-width: 799px) {
+#breakfast-menu,
+#lunch-menu,
+#local-left,
+    #local-right {
+        width: 100%;  
+    }
+}
+
+
